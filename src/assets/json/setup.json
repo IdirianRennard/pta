@@ -1,0 +1,80 @@
+{
+  "quickLinks" : [
+    {
+      "name": "Home",
+      "icon" : {
+        "lib": "fas",
+        "icon": "home"
+      }
+    },
+    {
+      "name" : "School",
+      "icon" : {
+        "lib" : "fas",
+        "icon" : "school"
+      },
+      "url" : ""
+    },
+    {
+      "name": "Schedule",
+      "icon" : {
+        "lib" : "fas",
+        "icon" : "calendar-alt"
+      },
+      "url": ""
+    },
+    {
+      "name" : "Facebook",
+      "icon" : {
+        "lib" : "fab",
+        "icon" : "facebook"
+      },
+      "url" : ""
+    }
+  ],
+  "mainMenu" : [
+      {
+        "name": "Teacher Preference Sheets",
+        "type": "card",
+        "content": ""
+      },
+      {
+        "name": "Forms and Docs",
+        "type": "card",
+        "content": ""
+      },
+      {
+        "name": "PTA Minutes",
+        "type": "card",
+        "content": ""
+      },
+      {
+        "name": "CAC Minutes",
+        "type": "card",
+        "content": ""
+      },
+      {
+        "name": "Commitee Info" ,
+        "type": "card",
+        "content": ""
+      },
+      {
+        "name": "Useful Links",
+        "type" : "menu",
+        "content" : [
+          {
+            "name": "Boxtops for Education",
+            "url" : "/"
+          },
+          {
+            "name": "Nebraska PTA",
+            "url" : "/"
+          },
+          {
+            "name": "National PTA",
+            "url": "/"
+          }
+        ]
+      }
+  ]
+}

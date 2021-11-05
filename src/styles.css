@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  background-image: url("./assets/images/Picotte BG.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+.mainMenu {
+  align-self: flex-start;
+  border-radius: unset !important;
+  background-color: black;
+  color: gold;
+  font-size : large;
+  font-variant: small-caps;
+  margin-bottom : 2px !important;
+  text-align: left !important;
+  width: 100%;
+}
+
+.mainMenu:hover {
+  background-color: gold;
+  color: black;
+  text-align: right !important;
+  text-decoration: underline;
+}
+
+.quickLink {
+  align-self: flex-start;
+  background-color: black;
+  color: gold;
+  font-size : large !important;
+  margin-left: 2px !important;
+}
+
+.quickLink:hover {
+  background-color: gold;
+  color: black;
+}
