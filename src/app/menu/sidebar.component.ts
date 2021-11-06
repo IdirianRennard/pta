@@ -26,6 +26,7 @@ import { MatToolbar } from '@angular/material/toolbar';
               *ngFor="let link of quickLinks"
               class="quickLink"
               (click)="drawer.toggle()"
+              (click)="openSite(link.url)"
           >
             <fa-icon [icon]="[link.icon.lib, link.icon.icon]">"</fa-icon>
           </button>
@@ -78,6 +79,10 @@ export class SidebarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  openSite( url: string ): void {
+    window.open( url, "_blank" );
   }
 
   getSetupData(): void {

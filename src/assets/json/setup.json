@@ -1,19 +1,12 @@
 {
   "quickLinks" : [
     {
-      "name": "Home",
-      "icon" : {
-        "lib": "fas",
-        "icon": "home"
-      }
-    },
-    {
       "name" : "School",
       "icon" : {
         "lib" : "fas",
         "icon" : "school"
       },
-      "url" : ""
+      "url" : "https://picotte.ops.org/"
     },
     {
       "name": "Schedule",
@@ -29,7 +22,7 @@
         "lib" : "fab",
         "icon" : "facebook"
       },
-      "url" : ""
+      "url" : "https://www.facebook.com/PicottePTA/"
     }
   ],
   "mainMenu" : [
