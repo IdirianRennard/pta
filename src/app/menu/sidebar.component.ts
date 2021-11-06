@@ -1,11 +1,10 @@
 import { FaIcon } from './../models/fa-icon';
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit, SimpleChange } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 import { MatDivider } from '@angular/material/divider';
 import { MatSidenav } from '@angular/material/sidenav';
 import { MatToolbar } from '@angular/material/toolbar';
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 @Component({
   selector: 'app-menu',
