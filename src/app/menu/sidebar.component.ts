@@ -21,7 +21,7 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
     </mat-toolbar>
 
     <mat-drawer-container [ngStyle]="containerStyle">
-      <mat-drawer #drawer [ngStyle]="drawerStyle" opened>
+      <mat-drawer #drawer [ngStyle]="drawerStyle">
         <div [ngStyle]="quickLinkHolderStyle">
           <button mat-icon-button
               *ngFor="let link of quickLinks"
