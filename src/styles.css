@@ -26,7 +26,6 @@ body {
 .mainMenu:hover {
   background-color: gold;
   color: black;
-  text-align: right !important;
   text-decoration: underline;
 }
 
