@@ -20,7 +20,7 @@
       "name" : "Facebook",
       "icon" : {
         "lib" : "fab",
-        "icon" : "facebook"
+        "icon" : "facebook-square"
       },
       "url" : "https://www.facebook.com/PicottePTA/"
     }
@@ -69,5 +69,6 @@
           }
         ]
       }
-  ]
+  ],
+  "tokenUrl": "https://placeholder.url/"
 }

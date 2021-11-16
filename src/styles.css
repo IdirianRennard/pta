@@ -5,11 +5,12 @@ html, body { height: 100%; }
 body {
   background-image: url("./assets/images/Picotte BG.png");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: unset;
+  height: 100%;
   margin: 0;
+  overflow: hidden;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-
 
 .mainMenu {
   align-self: flex-start;
@@ -29,15 +30,3 @@ body {
   text-decoration: underline;
 }
 
-.quickLink {
-  align-self: flex-start;
-  background-color: black;
-  color: gold;
-  font-size : large !important;
-  margin-left: 2px !important;
-}
-
-.quickLink:hover {
-  background-color: gold;
-  color: black;
-}

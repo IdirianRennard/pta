@@ -7,13 +7,10 @@ import { MatSidenav } from '@angular/material/sidenav';
 import { MatToolbar } from '@angular/material/toolbar';
 
 @Component({
-  selector: 'app-menu',
+  selector: 'app-sidenav',
   template: `
-    <mat-toolbar toolbar [ngStyle]="toolbarStyle">
-        <button mat-icon-button
-            [ngStyle]="toolbarStyle"
-            (click)="drawer.toggle()"
-          >
+    <mat-toolbar toolbar >
+        <button mat-icon-button>
           <fa-icon [icon]="[menuIcon.lib, menuIcon.icon ]"></fa-icon>
         </button>
         <span>Picotte Elementary PTA</span>
@@ -43,9 +40,6 @@ import { MatToolbar } from '@angular/material/toolbar';
         </div>
       </mat-drawer>
       <mat-drawer-content>
-
-      </mat-drawer-content>
-    </mat-drawer-container>
   `,
   styles: []
 })
@@ -59,7 +53,7 @@ export class SidebarComponent implements OnInit {
   public mainMenuHolderStyle: Record<string, string> = {};
   public quickLinkHolderStyle: Record<string, string> = {};
   public sidenavDividerStyle: Record<string, string> = {};
-  public toolbarStyle: Record<string, string> = {};
+  // public toolbarStyle: Record<string, string> = {};
 
   private _setupUrl: string = "./assets/json/setup.json";
   public setup: any;
@@ -103,14 +97,7 @@ export class SidebarComponent implements OnInit {
     }
   }
 
-  setDividerStyle() {
-    this.dividerStyle = {
-      'display': 'flex',
-      'justify-content': 'center',
-      'width': '100%',
-    }
-  }
-  setDrawerStyle() {
+DrawerStyle() {
     this.drawerStyle = {
       'background-color': '#222',
       'height': 'inherit',
@@ -142,41 +129,11 @@ export class SidebarComponent implements OnInit {
     }
   }
 
-  setQuickLinkHolderStyle() {
-    this.quickLinkHolderStyle = {
-      'display': 'flex',
-        'flex-direction': 'row',
-        'justify-content': 'flex-end',
-      'padding': '5px',
-    }
-  }
-
-  setSidenavDividerStyle () {
-    this.sidenavDividerStyle = {
-      'border-top-color': "gold",
-      'padding-bottom': '5px',
-    }
-  }
 
   setStyles() {
     this.setContainerStyle();
-    this.setDrawerStyle();
     this.setMainMenuHolderStyle();
     this.setHoveredMenuStyle();
-    this.setQuickLinkHolderStyle();
-    this.setSidenavDividerStyle();
-    this.setToolbarStyle();
   }
-
-  setToolbarStyle() {
-    this.toolbarStyle = {
-      'background-color': 'black',
-      'color': '#DC143C',
-      'height': '5vh',
-      'font-size': '2.5vh',
-    }
-  }
-
-
 }
 
