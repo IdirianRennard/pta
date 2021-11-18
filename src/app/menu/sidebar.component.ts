@@ -1,15 +1,11 @@
 import { FaIcon } from './../models/fa-icon';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { MatButton } from '@angular/material/button';
-import { MatDivider } from '@angular/material/divider';
-import { MatSidenav } from '@angular/material/sidenav';
-import { MatToolbar } from '@angular/material/toolbar';
 
 @Component({
-  selector: 'app-sidenav',
+  selector: 'menu-neveruserd',
   template: `
-    <mat-toolbar toolbar >
+    <!-- <mat-toolbar>
         <button mat-icon-button>
           <fa-icon [icon]="[menuIcon.lib, menuIcon.icon ]"></fa-icon>
         </button>
@@ -39,7 +35,7 @@ import { MatToolbar } from '@angular/material/toolbar';
           </button>
         </div>
       </mat-drawer>
-      <mat-drawer-content>
+      <mat-drawer-content> -->
   `,
   styles: []
 })

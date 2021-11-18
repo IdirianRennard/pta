@@ -32,8 +32,4 @@ export class QuicklinksComponent implements OnInit {
   public handleQuickLink($event: Event){
     console.log( $event )
   }
-
-  public mouseQuickLink($event: Event){
-    console.log( $event )
-  }
 }

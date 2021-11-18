@@ -1,0 +1,20 @@
+.menuStyle {
+  border-radius: unset;
+  background-color: black;
+  color: gold;
+  font-size : large;
+  font-variant: small-caps;
+  margin-top: 1px;
+  margin-bottom : 2px;
+  margin-right: 2rem;
+  text-align: left;
+  width: 100%;
+  font-size: large;
+}
+
+.menuStyle:hover {
+  background-color: gold;
+  color: black;
+  text-align: right;
+  text-decoration: underline;
+}

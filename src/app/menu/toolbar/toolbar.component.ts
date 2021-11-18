@@ -1,16 +1,15 @@
 import { FaIcon } from '../../models/fa-icon';
 import { Component, OnInit } from '@angular/core';
 
-
 @Component({
   selector: 'menu-toolbar',
   template: `
   <mat-toolbar toolbar class="toolbarStyle">
       <button mat-flat-button
           class="menuButton"
-          (click)="handleMenuEvent($event)"
+          (click)="drawer.toggle()"
       >
-        <fa-icon [icon]="[menuIcon.lib, menuIcon.icon ]"></fa-icon>
+        <fa-icon [icon]="[menuIcon.lib, menuIcon.icon]"></fa-icon>
       </button>
         <span class="toolbarStyle">Picotte PTA</span>
         <span class="spacer"></span>
@@ -18,7 +17,14 @@ import { Component, OnInit } from '@angular/core';
           <menu-gembox class="quickLinkHolderStyle"></menu-gembox>
         </span>
     </mat-toolbar>
-    <menu-sidenav></menu-sidenav>
+
+    <mat-drawer-container class="containerStyle">
+      <mat-drawer #drawer class="drawerStyle">
+        <side-menu></side-menu>
+      </mat-drawer>
+      <mat-drawer-content>
+      </mat-drawer-content>
+    </mat-drawer-container>
   `,
   styleUrls: ['./toolbar.component.css']
 })
@@ -29,11 +35,7 @@ export class ToolbarComponent implements OnInit {
     icon: "bars"
   };
 
-constructor( ) { }
+  constructor( ) { }
 
   ngOnInit(): void { }
-
-  handleMenuEvent( $event: Event ) {
-    console.log( $event )
-  }
 }
