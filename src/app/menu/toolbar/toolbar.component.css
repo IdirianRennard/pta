@@ -1,8 +1,6 @@
 .containerStyle {
-  position: grid;
-
   width: 100%;
-  height: 100%;
+  height: 100%
 }
 
 .drawerStyle {
@@ -11,9 +9,9 @@
   flex-direction: column;
   align-content: flex-start;
   height: inherit;
-  position: sticky;
-  width: min-content;
-  max-width: auto;
+  width: max-content;
+  max-width: 35%;
+  overflow: hidden;
 }
 
 .menuButton {
@@ -23,8 +21,8 @@
 }
 
 .menuButton:hover {
-  background-color: gold;
-  color: black;
+  background-color: black;
+  color: gold;
 }
 
 .quickLinkHolderStyle {

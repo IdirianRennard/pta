@@ -1,3 +1,12 @@
+.gridListStyle {
+  height: 100%;
+  width: calc(100% - 2rem);
+  padding-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 .gridStyle {
-  background-color: aqua;
+  width: 95%;
+  background-color: gold;
+  border-radius: 25px;
 }

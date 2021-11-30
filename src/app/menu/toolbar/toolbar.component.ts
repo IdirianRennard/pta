@@ -18,11 +18,12 @@ import { Component, OnInit } from '@angular/core';
         </span>
     </mat-toolbar>
 
-    <mat-drawer-container class="containerStyle">
-      <mat-drawer #drawer class="drawerStyle">
+    <mat-drawer-container class="containerStyle" >
+      <mat-drawer #drawer class="drawerStyle" mode="side">
         <side-menu></side-menu>
       </mat-drawer>
       <mat-drawer-content>
+        <side-grid></side-grid>
       </mat-drawer-content>
     </mat-drawer-container>
   `,
